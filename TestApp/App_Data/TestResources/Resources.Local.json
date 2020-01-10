@@ -1,0 +1,4 @@
+﻿{
+  /* Please add any common resources you want to use inside test for validation */
+  "LoginUrl": "www.google.com" 
+}

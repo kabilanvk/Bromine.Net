@@ -1,0 +1,57 @@
+[
+    {
+        "Navigate": {
+            "Url": "https://www.google.com/"
+        }
+    },
+    {
+        "Click": {
+            "Ele": {
+                "gb_70": "Id"
+            }
+        }
+    },
+    {
+        "Input": {
+            "Ele": [
+                {
+                    "Type": "Id",
+                    "Expr": "identifierId",
+                    "Input": "@UserName"
+                }
+            ]
+        }
+    },
+    {
+        "Click": {
+            "Ele": {
+                "/html/body/div[1]/div[1]/div[2]/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/span/span": "Xpath"
+            }
+        }
+    },
+    {
+        "Input": {
+            "Ele": [
+                {
+                    "Type": "Xpath",
+                    "Expr": "/html/body/div[1]/div[1]/div[2]/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input",
+                    "Input": "@Password"
+                }
+            ]
+        }
+    },
+    {
+        "Click": {
+            "Ele": {
+                "/html/body/div[1]/div[1]/div[2]/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/span/span": "Xpath"
+            }
+        }
+    },
+    {
+        "VerifyUi": {
+            "Ele": {
+                "/html/body/div/div[3]/div[2]/div/div/div[2]/div[2]/div[1]/a": "Xpath"
+            }
+        }
+    }
+]

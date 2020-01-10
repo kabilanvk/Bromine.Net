@@ -1,0 +1,40 @@
+{
+    "HeaderConfiguration": {
+        /* Header groups with a key to use it from test declaration */
+        "HeaderSets": [
+            {
+                "Key": "GoogleHeaders",
+                "X-CustomHeader": "Hello"
+            }
+        ],
+        /* Possible header keys */
+        "HeaderProperties": [
+            {
+                "Key": "XForwardedFor",
+                "HeaderName": "X-Forwarded-For",
+                "AutoLoaded": false
+            },
+            {
+                "Key": "UserAgent",
+                "HeaderName": "user-agent",
+                "AutoLoaded": false
+            },
+            {
+                "Key": "Authorization",
+                "HeaderName": "Authorization",
+                "AutoLoaded": false
+            }
+        ]
+    },
+    /* IP will be sent as part of XForwardedFor header when specified in test declaration */
+    "RegionConfiguration": [
+        {
+            "Key": "Embargo",
+            "Ip": "2.177.149.227"
+        },
+        {
+            "Key": "US",
+            "Ip": "4.28.114.129"
+        }
+    ]
+}

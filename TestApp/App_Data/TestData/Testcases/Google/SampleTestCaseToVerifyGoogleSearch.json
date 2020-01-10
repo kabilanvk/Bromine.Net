@@ -1,0 +1,11 @@
+[
+    {
+        "AddTemplate": {
+            "Name": "GoogleLogin",
+            "Params": {
+                "@UserName": "Replace me with a google user name",
+                "@Password": "Replace me with a password"
+            }
+        }
+    }
+]

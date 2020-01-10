@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Configurations>Debug;Release;Int</Configurations>
+    <IsPackable>false</IsPackable>
+    <ApplicationIcon />
+    <OutputType>Library</OutputType>
+    <StartupObject />
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>kabilan.vk@gmail.com</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="App_Data\Extensions\Firefox\consolemanager.xpi" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="App_Data\Extensions\Firefox\geckodriver.exe" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="App_Data\TestResources\*" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.3.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.0.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.0.0" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Automation.Core\Bromine.Automation.Core.csproj" />
+    <ProjectReference Include="..\GenericWrapper\Bromine.GenericWrapper.csproj" />
+    <ProjectReference Include="..\RestServiceWrapper\Bromine.RestServiceWrapper.csproj" />
+    <ProjectReference Include="..\SeleniumWrapper\Bromine.SeleniumWrapper.csproj" />
+  </ItemGroup>
+
+</Project>
